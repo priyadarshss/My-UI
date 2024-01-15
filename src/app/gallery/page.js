@@ -1,26 +1,28 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import styles from './page.module.scss'
-import Image from 'next/image'
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion'
-
-const images = [
-  '1.jpg',
-  '2.jpg',
-  '3.jpg',
-  '4.jpg',
-  '5.jpg',
-  '6.jpg',
-  '7.jpg',
-  '8.jpg',
-  '9.jpg',
-  '10.jpg',
-  '11.jpg',
-  '12.jpg',
-]
+import ColumnImage from './columnImage'
 
 export default function Home() {
+  const images = useMemo(
+    () => [
+      'https://images.pexels.com/photos/3048527/pexels-photo-3048527.png?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/707676/pexels-photo-707676.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/753575/pexels-photo-753575.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/1010079/pexels-photo-1010079.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/1686944/pexels-photo-1686944.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/1115204/pexels-photo-1115204.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/256453/pexels-photo-256453.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/776336/pexels-photo-776336.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/2035214/pexels-photo-2035214.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/2027697/pexels-photo-2027697.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/2467289/pexels-photo-2467289.jpeg?auto=compress&cs=tinysrgb&w=600',
+      'https://images.pexels.com/photos/1745936/pexels-photo-1745936.jpeg?auto=compress&cs=tinysrgb&w=600',
+    ],
+    []
+  )
   const gallery = useRef(null)
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
 
@@ -82,15 +84,5 @@ export default function Home() {
 }
 
 const Column = ({ images, y }) => {
-  return (
-    <motion.div className={styles.column} style={{ y }}>
-      {images.map((src, i) => {
-        return (
-          <div key={i} className={styles.imageContainer}>
-            <Image src={`/images/${src}`} alt='image' fill />
-          </div>
-        )
-      })}
-    </motion.div>
-  )
+  return <ColumnImage images={images} y={y} />
 }
