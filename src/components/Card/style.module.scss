@@ -5,6 +5,7 @@
   justify-content: center;
   position: sticky;
   top: 0px;
+  padding-bottom: 100px;
   .card {
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
             font-size: 28px;
             font-family: 'Title';
           }
+          margin-bottom: 8vh;
         }
         span {
           display: flex;

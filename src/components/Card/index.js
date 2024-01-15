@@ -59,7 +59,7 @@ const Card = ({
           <div className={styles.imageContainer}>
             <motion.div
               className={styles.inner}
-              style={{ opacity: scrollYProgress, scale: imageScale }}
+              style={{ scale: imageScale }}
             >
               <Image fill src={src} alt='image' />
             </motion.div>

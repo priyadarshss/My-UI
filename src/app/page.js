@@ -5,6 +5,8 @@ import styles from './page.module.scss'
 import { useScroll } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import Lenis from '@studio-freight/lenis'
+import Footer from '../components/Footer'
+import Link from 'next/link'
 
 const Page = () => {
   const container = useRef(null)
@@ -27,12 +29,23 @@ const Page = () => {
   return (
     <>
       <div className={styles.main}>
-        <h1>Page</h1>
-        {/* give a link below with the name gallery */}
-        <a href='/gallery'>Gallery</a>
-        {/* give more examples */}
-        <a href='/about'>About</a>
-        <a href='/contact'>Contact</a>
+        <h1>Welcome to My UI</h1>
+        <p>
+          Explore our creative projects and discover the beauty of design and
+          innovation.
+        </p>
+        <h3>Checkout the links below or continue scrolling </h3>
+        <div className={styles.row}>
+          <Link href='/gallery'>
+            <p className={styles.btn}>Gallery</p>
+          </Link>
+          <Link href='/about'>
+            <p className={styles.btn}>About</p>
+          </Link>
+          <Link href='/contact'>
+            <p className={styles.btn}>Contact</p>
+          </Link>
+        </div>
       </div>
       <div style={{ backgroundColor: '#e0e0e0' }} ref={container}>
         {projects.map((project, i) => {
@@ -43,13 +56,13 @@ const Page = () => {
               i={i}
               {...project}
               progress={scrollYProgress}
-              range={[i * 0.25, 1]}
+              range={[i * 0.2, 1]}
               targetScale={targetScale}
             />
           )
         })}
       </div>
-      <div className={styles.spacer} />
+      <Footer />
     </>
   )
 }

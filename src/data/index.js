@@ -1,42 +1,42 @@
 export const projects = [
   {
-    title: 'Matthias Leidinger',
+    title: 'Renewable Harmony',
     description:
-      'Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.',
-    src: 'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '/gallery/matthias-leidinger',
-    color: '#BBACAF',
+      'Embark on a visual journey into the world of renewable energy, featuring serene photographs capturing wind farms, solar installations, and hydroelectric power plants.',
+    src: 'https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '/gallery/renewable-harmony',
+    color: '#648C3A', // Darker green
   },
   {
-    title: 'Clément Chapillon',
+    title: 'Eco Tranquility',
     description:
-      'This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).',
-    src: 'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '/gallery/clement-chapillon',
-    color: '#977F6D',
+      'Experience the serenity of companies on their path to carbon neutrality. Discover their efforts to reduce and offset emissions for a tranquil and sustainable future.',
+    src: 'https://images.pexels.com/photos/2734519/pexels-photo-2734519.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '/gallery/eco-tranquility',
+    color: '#3D6D7D', // Darker blue
   },
   {
-    title: 'Zissou',
+    title: 'Sustainable Futures',
     description:
-      'Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.',
-    src: 'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '/gallery/zissou',
-    color: '#C2491D',
+      'Uncover the latest innovations in green technology through the lens of talented photographers. From electric vehicles to smart grids, witness the aesthetics of sustainable living.',
+    src: 'https://images.pexels.com/photos/1649386/pexels-photo-1649386.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '/gallery/sustainable-futures',
+    color: '#D99A80', // Darker peach
   },
   {
-    title: 'Mathias Svold and Ulrik Hasemann',
+    title: 'Earthly Elegance',
     description:
-      'The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.',
-    src: 'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '/gallery/mathias-svold-and-ulrik-hasemann',
-    color: '#B62429',
+      'Explore the elegance of eco-friendly practices through captivating visuals. Learn about sustainable agriculture, zero-waste initiatives, and embrace a lighter impact on our planet.',
+    src: 'https://images.pexels.com/photos/2908334/pexels-photo-2908334.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '/gallery/earthly-elegance',
+    color: '#D4B03A', // Darker yellow
   },
   {
-    title: 'Mark Rammers',
+    title: 'Green Horizon Heroes',
     description:
-      'Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing collection of images is a visual and meditative journey into the origins of regrets and the uncertainty of stepping into new unknowns.',
-    src: 'https://images.pexels.com/photos/1055613/pexels-photo-1055613.jpeg?auto=compress&cs=tinysrgb&w=600',
-    link: '/gallery/mark-rammers',
-    color: '#88A28D',
+      'Meet the individuals and organizations making a significant impact in the fight against climate change. Visualize their commitment to a greener, healthier planet with light and inspiring colors.',
+    src: 'https://images.pexels.com/photos/1327877/pexels-photo-1327877.jpeg?auto=compress&cs=tinysrgb&w=600',
+    link: '/gallery/green-horizon-heroes',
+    color: '#D07A66', // Darker coral
   },
 ]
