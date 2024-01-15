@@ -7,6 +7,7 @@ import { useEffect, useRef } from 'react'
 import Lenis from '@studio-freight/lenis'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import Gallery from './gallery/page'
 
 const Page = () => {
   const container = useRef(null)
@@ -28,7 +29,8 @@ const Page = () => {
 
   return (
     <>
-      <div className={styles.main}>
+      <Gallery />
+      {/* <div className={styles.main}>
         <h1>Welcome to My UI</h1>
         <p>
           Explore our creative projects and discover the beauty of design and
@@ -46,8 +48,11 @@ const Page = () => {
             <p className={styles.btn}>Contact</p>
           </Link>
         </div>
-      </div>
-      <div style={{ backgroundColor: '#e0e0e0' }} ref={container}>
+      </div> */}
+      <div
+        style={{ background: 'linear-gradient(to bottom, #f8f8f8, #e0e0e0)' }}
+        ref={container}
+      >
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
           return (

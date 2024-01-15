@@ -60,11 +60,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.intro}>
-        <h1>Welcome to Your Gallery</h1>
+        <h1>Welcome to My UI</h1>
         <p>Discover the beauty of art through immersive scrolling.</p>
         <div className={styles.scrollIndicator}>
           <span>Scroll down to explore</span>
-          <div className={styles.arrow}></div>
+          <div className={styles.mouse}></div>
         </div>
       </div>
       {/* <div className={styles.spacer}></div> */}
@@ -78,6 +78,8 @@ export default function Home() {
       <div className={styles.additionalContent}>
         <h2>Explore Beyond the Art</h2>
         <p>Immerse yourself in a journey that goes beyond the canvas.</p>
+        <h3 style={{marginTop: '100px'}}>Keep scrolling </h3>
+        <div className={styles.scroll} />
       </div>
     </main>
   )
